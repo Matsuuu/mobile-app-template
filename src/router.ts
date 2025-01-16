@@ -3,6 +3,7 @@ import { Suunta, SuuntaTarget, ViewRoute } from "suunta";
 import { HomeView } from "./views/HomeView";
 import { TechnologiesView } from "./views/TechnologiesView";
 import { GetStartedView } from "./views/GetStartedView";
+import { ActionView } from "./views/ActionView";
 
 const routes = [
     {
@@ -19,6 +20,11 @@ const routes = [
         name: "GetStarted",
         path: "/get-started",
         view: GetStartedView,
+    },
+    {
+        name: "Action",
+        path: "/action",
+        view: ActionView,
     },
 ] as const;
 

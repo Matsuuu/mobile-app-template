@@ -11,6 +11,8 @@ export function GetStartedView() {
             <sl-button outline variant="primary" href="https://github.com/Matsuuu/mobile-app-template"
                 >Get the template!</sl-button
             >
+
+            <sl-button outline href="/action">Or see it in action!</sl-button>
         </div>
     `;
 }
