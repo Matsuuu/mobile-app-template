@@ -5,7 +5,8 @@
   "type": "module",
   "scripts": {
     "start": "vite",
-    "build": "vite build"
+    "build": "vite build",
+    "start:android": "cap run android -l --host localhost --port 8080 --forwardPorts 8080:8080"
   },
   "keywords": [],
   "author": "",
