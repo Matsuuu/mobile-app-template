@@ -61,10 +61,40 @@ export function HomeView() {
 }
 
             </code></pre>
-            <p>TODO</p>
+
+            <p>Lit comes fitted with all you need for templating, rendering custom elements and the bunch.</p>
+
+            <p>
+                Suunta will take care or your client-side routing, state management and lifecycle hooks of your views.
+            </p>
 
             <h2>Battle tested components</h2>
-            <p>TODO</p>
+
+            <p>
+                Shoelace provides a massive collection of ready-made components you can use out of the box, modify to
+                fit your style tokens or even extend to fit your specific needs
+            </p>
+
+            <pre><code class="language-javascript">
+import { html } from "lit";
+import "../components/fitted-image";
+import "../components/page-indicator";
+
+export function ApplicationView() {
+    return () => html\`
+        &ltdiv class="sliding-view"&gt
+            &ltsl-drawer&gt
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                &ltsl-button slot="footer" variant="primary"&gtClose&lt/sl-button&gt
+            &lt/sl-drawer&gt
+            &ltpage-indicator pages="3" current="1"&gt&lt/page-indicator&gt
+            &lth1&gtWriting mobile apps doesn't have to be hard.&lt/h1&gt
+            &ltsl-button outline variant="primary" href="/tech"&gtShow me!&lt/sl-button&gt
+        &lt/div&gt
+    \`;
+}
+
+            </code></pre>
 
             <h2>Mobile development environment</h2>
             <p>TODO</p>
