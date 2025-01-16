@@ -1,5 +1,6 @@
 import { html } from "lit";
 import "../components/back-button";
+import { router } from "../router";
 
 const TECHS = [
     { name: "Lit", href: "http://lit.dev/" },
@@ -12,7 +13,7 @@ const TECHS = [
 export function TechnologiesView() {
     return () => html`
         <div class="sliding-view">
-            <back-button href="/"></back-button>
+            <back-button href="${router.resolve("Home")}"></back-button>
             <fitted-image src="/woman-book.png"></fitted-image>
             <page-indicator pages="3" current="2"></page-indicator>
             <h1>

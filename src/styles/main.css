@@ -31,8 +31,13 @@ body {
 }
 
 @font-face {
-    font-family: "FantasqueSans";
+    font-family: "FantasqueSansItalic";
     src: url("/fantasquesansmono-italic.otf");
+}
+
+@font-face {
+    font-family: "FantasqueSans";
+    src: url("/fantasquesansmono-regular.otf");
 }
 
 html {
@@ -98,12 +103,14 @@ fitted-image {
 }
 
 h1 {
+    font-family: "FantasqueSans", serif;
     text-align: center;
     font-size: 1.6rem;
     font-weight: 300;
 }
 
 h2 {
+    font-family: "FantasqueSansItalic", serif;
     text-align: center;
 }
 
@@ -128,4 +135,8 @@ h2 {
     bottom: 1rem;
     left: 1rem;
     font-size: 10px;
+}
+
+pre {
+    width: 100%;
 }

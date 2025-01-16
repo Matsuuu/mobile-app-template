@@ -1,9 +1,10 @@
 import { html } from "lit";
+import { router } from "../router";
 
 export function GetStartedView() {
     return () => html`
         <div class="sliding-view">
-            <back-button href="/tech"></back-button>
+            <back-button href="${router.resolve("Technologies")}"></back-button>
             <fitted-image src="/woman-smiling.png"></fitted-image>
             <page-indicator pages="3" current="3"></page-indicator>
             <h1>Clone the template, Install dependencies and start creating!</h1>

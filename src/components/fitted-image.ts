@@ -19,6 +19,7 @@ export class FittedImage extends LitElement {
     static styles = css`
         :host {
             position: relative;
+            min-height: 280px;
         }
 
         div {

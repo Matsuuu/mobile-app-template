@@ -38,7 +38,7 @@ const routerOptions = {
     target: document.body,
 };
 
-const router = new Suunta(routerOptions);
+export const router = new Suunta(routerOptions);
 
 export function startRouter() {
     router.start();
