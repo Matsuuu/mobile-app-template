@@ -11,18 +11,20 @@ const TECHS = [
 
 export function TechnologiesView() {
     return () => html`
-        <back-button href="/"></back-button>
-        <fitted-image src="/woman-book.png"></fitted-image>
-        <page-indicator pages="3" current="2"></page-indicator>
-        <h1>
-            Standalone technologies, <br />
-            Browser standards, <br />
-            Ultimate DX
-        </h1>
+        <div class="sliding-view">
+            <back-button href="/"></back-button>
+            <fitted-image src="/woman-book.png"></fitted-image>
+            <page-indicator pages="3" current="2"></page-indicator>
+            <h1>
+                Standalone technologies, <br />
+                Browser standards, <br />
+                Ultimate DX
+            </h1>
 
-        <ul class="tech-listing">
-            ${TECHS.map(tech => html` <li><a href="${tech.href}">${tech.name}</a></li> `)}
-        </ul>
-        <sl-button outline variant="primary" href="/get-started">Let's get started!</sl-button>
+            <ul class="tech-listing">
+                ${TECHS.map(tech => html` <li><a href="${tech.href}">${tech.name}</a></li> `)}
+            </ul>
+            <sl-button outline variant="primary" href="/get-started">Let's get started!</sl-button>
+        </div>
     `;
 }
