@@ -27,7 +27,7 @@ export class FittedImage extends LitElement {
             position: absolute;
             top: 0;
             left: 0;
-            box-shadow: inset 0px 0px 40px 53px #fff;
+            box-shadow: inset 0px 0px 60px 60px #fff;
         }
 
         img {

@@ -1,35 +1,93 @@
-html, body {
+:root {
+    --sl-color-primary-50: var(--sl-color-rose-50);
+    --sl-color-primary-100: var(--sl-color-rose-100);
+    --sl-color-primary-200: var(--sl-color-rose-200);
+    --sl-color-primary-300: var(--sl-color-rose-300);
+    --sl-color-primary-400: var(--sl-color-rose-400);
+    --sl-color-primary-500: var(--sl-color-rose-500);
+    --sl-color-primary-600: var(--sl-color-rose-600);
+    --sl-color-primary-700: var(--sl-color-rose-700);
+    --sl-color-primary-800: var(--sl-color-rose-800);
+    --sl-color-primary-900: var(--sl-color-rose-900);
+    --sl-color-primary-950: var(--sl-color-rose-950);
+}
+
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
+@font-face {
+    font-family: "FantasqueSans";
+    src: url("/fantasquesansmono-italic.otf");
+}
+
 html {
-    font-family: "Playwrite IN", serif;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
+    font-family: "FantasqueSans", serif;
+    font-optical-sizing: auto;
 }
 
 body {
-    background: #FFF;
+    background: #fff;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     padding: 2rem;
     box-sizing: border-box;
     gap: 1rem;
+    padding-top: 10vh;
+
+    max-width: 500px;
+    margin: auto;
+    position: relative;
 }
 
 fitted-image {
-    width: 60vw;
+    width: 80%;
 
     border-radius: 30%;
     overflow: hidden;
+
+    animation: 5000ms wave infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes wave {
+    0% {
+        transform: rotate3d(1, 1, 1, 30deg);
+    }
+
+    50% {
+        transform: rotate3d(1, 1, 1, -30deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 30deg);
+    }
 }
 
 h1 {
     text-align: center;
     font-size: 1.6rem;
-  font-weight: 300;
+    font-weight: 300;
+}
+
+.tech-listing {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.tech-listing a {
+    text-decoration: none;
+    color: var(--sl-color-rose-500);
+}
+
+#images-by {
+    position: fixed;
+    bottom: 1rem;
+    left: 1rem;
+    font-size: 10px;
 }
