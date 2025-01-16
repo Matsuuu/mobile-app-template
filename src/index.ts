@@ -7,7 +7,7 @@ render(
   html`
     <sl-button>
       <sl-icon name="apple"></sl-icon>
-      Testi
+      Testing
     </sl-button>
   `,
   document.body,
