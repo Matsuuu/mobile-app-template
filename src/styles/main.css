@@ -1,3 +1,35 @@
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+html {
+    font-family: "Playwrite IN", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
 body {
-    background: lightgrey;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    gap: 1rem;
+}
+
+fitted-image {
+    width: 60vw;
+
+    border-radius: 30%;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.6rem;
+  font-weight: 300;
 }

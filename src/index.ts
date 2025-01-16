@@ -3,14 +3,6 @@ import "./styles/main.css";
 // @ts-ignore
 import "@shoelace-style/shoelace/dist/themes/light.css";
 import "@shoelace-style/shoelace/dist/shoelace.js";
-import { html, render } from "lit";
+import { startRouter } from "./router";
 
-render(
-  html`
-    <sl-button>
-      <sl-icon name="apple"></sl-icon>
-      Testing
-    </sl-button>
-  `,
-  document.body,
-);
+startRouter();
