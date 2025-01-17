@@ -26,7 +26,10 @@ export function ActionView() {
 
             <h2>Routing and Templating</h2>
 
-            <p>By default the template utilizes Suunta as its routing library, and Lit as its templating system.</p>
+            <p>
+                By default the template utilizes <a href="#">Suunta</a> as its routing library, and
+                <a href="https://lit.dev">Lit</a> as its templating system.
+            </p>
             <p>
                 You can get started with this setup and even build whole production-ready applications with it. If you
                 however want to swap them out, feel free to do so.
@@ -75,8 +78,8 @@ export function HomeView() {
             <h2>Battle tested components</h2>
 
             <p>
-                Shoelace provides a massive collection of ready-made components you can use out of the box, modify to
-                fit your style tokens or even extend to fit your specific needs
+                <a href="https://shoelace.style/">Shoelace</a> provides a massive collection of ready-made components
+                you can use out of the box, modify to fit your style tokens or even extend to fit your specific needs
             </p>
 
             <pre><code class="language-html">
@@ -103,10 +106,13 @@ export function HomeView() {
                 built in.
             </p>
 
+            <p><i>You will need to have an emulator for your given system installed though...</i></p>
+
             <h2>Native API's</h2>
             <p>
-                Access native mobile API's through the Capacitor Plugin system. Just because you're building a
-                cross-platform tool, doesn't mean you have to withdraw from all native features.
+                Access native mobile API's through the <a href="https://capacitorjs.com/">Capacitor</a> Plugin system.
+                Just because you're building a cross-platform tool, doesn't mean you have to withdraw from all native
+                features.
             </p>
 
             <pre><code class="language-javascript">
