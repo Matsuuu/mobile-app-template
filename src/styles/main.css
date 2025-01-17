@@ -48,6 +48,7 @@ html {
 body {
     background: #fff;
     box-sizing: border-box;
+    margin: 0;
 }
 
 .sliding-view {
@@ -59,6 +60,7 @@ body {
     box-sizing: border-box;
     gap: 1rem;
     padding-top: 10vh;
+    margin: auto;
 
     position: relative;
     max-width: 500px;
